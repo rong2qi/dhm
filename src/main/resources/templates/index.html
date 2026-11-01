@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个性化饮食健康管理系统</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 3.5rem;
+        }
+        .jumbotron {
+            padding: 4rem 2rem;
+            margin-bottom: 2rem;
+            background-color: #e9ecef;
+            border-radius: .3rem;
+        }
+        .feature-icon {
+            font-size: 4rem;
+            color: #0d6efd;
+            margin-bottom: 1rem;
+        }
+        .step {
+            text-align: center;
+            padding: 2rem 0;
+        }
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            background-color: #0d6efd;
+            color: white;
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">个性化饮食健康管理系统</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">登录</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/register">注册</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-4">个性化饮食健康管理系统</h1>
+                <p class="lead">科学管理饮食，健康生活每一天</p>
+                <p>根据您的身体情况、活动水平和健康目标，为您提供个性化的饮食建议，帮助您实现健康目标。</p>
+                <p>
+                    <a class="btn btn-primary btn-lg" href="/register">立即注册</a>
+                    <a class="btn btn-outline-primary btn-lg" href="/login">已有账号？登录</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <h2 class="text-center mb-4">我们的功能特点</h2>
+            <div class="row g-4 py-5">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-egg-fried"></i>🍽️
+                        </div>
+                        <h3>个性化饮食建议</h3>
+                        <p>根据您的身体状况、活动水平和健康目标，为您提供个性化的饮食建议。</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-calendar-check"></i>📊
+                        </div>
+                        <h3>饮食计划管理</h3>
+                        <p>帮助您科学规划饮食计划，并记录每天的实际摄入情况，方便进行数据分析。</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-graph-up"></i>📈
+                        </div>
+                        <h3>健康数据分析</h3>
+                        <p>分析您的饮食记录和健康数据，帮助您了解自己的健康状况和饮食习惯。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <h2 class="text-center mb-4">如何使用</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h4>注册账号</h4>
+                        <p>填写基本信息，包括身高、体重、活动水平和健康目标。</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h4>获取建议</h4>
+                        <p>系统会根据您的信息，生成个性化的饮食建议。</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h4>记录饮食</h4>
+                        <p>每天记录您的实际饮食情况，系统会自动计算营养摄入。</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h4>查看分析</h4>
+                        <p>查看饮食记录的数据分析，了解自己的健康状况。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-light py-4 mt-5">
+        <div class="container">
+            <p class="text-center text-muted">© 2025 个性化饮食健康管理系统</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
